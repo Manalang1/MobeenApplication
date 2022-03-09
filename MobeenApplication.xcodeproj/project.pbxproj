@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8AD2BE9C27D8972E00FA1BD5 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BE9B27D8972E00FA1BD5 /* RequestViewController.swift */; };
+		8AD2BEA027D8978600FA1BD5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BE9F27D8978600FA1BD5 /* Item.swift */; };
+		8AD2BEA227D897AB00FA1BD5 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BEA127D897AB00FA1BD5 /* RequestTableViewCell.swift */; };
+		8AD2BEA427D897DE00FA1BD5 /* CustomImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BEA327D897DE00FA1BD5 /* CustomImageView.swift */; };
+		8AD2BEA627D8981C00FA1BD5 /* CompViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BEA527D8981C00FA1BD5 /* CompViewController.swift */; };
+		8AD2BEA827D8983F00FA1BD5 /* ComTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BEA727D8983F00FA1BD5 /* ComTableViewCell.swift */; };
+		8AD2BEAA27D8986F00FA1BD5 /* PayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BEA927D8986F00FA1BD5 /* PayViewController.swift */; };
 		8F52923227D895C2002289B0 /* TranslatorTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52923127D895C2002289B0 /* TranslatorTableViewCell.swift */; };
 		8F52923427D895E8002289B0 /* ExpressVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F52923327D895E8002289B0 /* ExpressVCViewController.swift */; };
 		8F52923727D89621002289B0 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 8F52923927D89621002289B0 /* Localizable.strings */; };
@@ -19,6 +26,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		8AD2BE9B27D8972E00FA1BD5 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
+		8AD2BE9F27D8978600FA1BD5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		8AD2BEA127D897AB00FA1BD5 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
+		8AD2BEA327D897DE00FA1BD5 /* CustomImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomImageView.swift; sourceTree = "<group>"; };
+		8AD2BEA527D8981C00FA1BD5 /* CompViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompViewController.swift; sourceTree = "<group>"; };
+		8AD2BEA727D8983F00FA1BD5 /* ComTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComTableViewCell.swift; sourceTree = "<group>"; };
+		8AD2BEA927D8986F00FA1BD5 /* PayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayViewController.swift; sourceTree = "<group>"; };
 		8F52923127D895C2002289B0 /* TranslatorTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslatorTableViewCell.swift; sourceTree = "<group>"; };
 		8F52923327D895E8002289B0 /* ExpressVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExpressVCViewController.swift; sourceTree = "<group>"; };
 		8F52923827D89621002289B0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
@@ -72,6 +86,13 @@
 				8FF01B4427D88EB40065AC54 /* Info.plist */,
 				8F52923127D895C2002289B0 /* TranslatorTableViewCell.swift */,
 				8F52923327D895E8002289B0 /* ExpressVCViewController.swift */,
+				8AD2BE9B27D8972E00FA1BD5 /* RequestViewController.swift */,
+				8AD2BE9F27D8978600FA1BD5 /* Item.swift */,
+				8AD2BEA127D897AB00FA1BD5 /* RequestTableViewCell.swift */,
+				8AD2BEA327D897DE00FA1BD5 /* CustomImageView.swift */,
+				8AD2BEA527D8981C00FA1BD5 /* CompViewController.swift */,
+				8AD2BEA727D8983F00FA1BD5 /* ComTableViewCell.swift */,
+				8AD2BEA927D8986F00FA1BD5 /* PayViewController.swift */,
 				8F52923927D89621002289B0 /* Localizable.strings */,
 			);
 			path = MobeenApplication;
@@ -151,8 +172,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				8FF01B3B27D88EB20065AC54 /* ViewController.swift in Sources */,
+				8AD2BEA427D897DE00FA1BD5 /* CustomImageView.swift in Sources */,
+				8AD2BEA227D897AB00FA1BD5 /* RequestTableViewCell.swift in Sources */,
 				8F52923227D895C2002289B0 /* TranslatorTableViewCell.swift in Sources */,
+				8AD2BE9C27D8972E00FA1BD5 /* RequestViewController.swift in Sources */,
+				8AD2BEA627D8981C00FA1BD5 /* CompViewController.swift in Sources */,
 				8F52923427D895E8002289B0 /* ExpressVCViewController.swift in Sources */,
+				8AD2BEAA27D8986F00FA1BD5 /* PayViewController.swift in Sources */,
+				8AD2BEA027D8978600FA1BD5 /* Item.swift in Sources */,
+				8AD2BEA827D8983F00FA1BD5 /* ComTableViewCell.swift in Sources */,
 				8FF01B3727D88EB20065AC54 /* AppDelegate.swift in Sources */,
 				8FF01B3927D88EB20065AC54 /* SceneDelegate.swift in Sources */,
 			);
@@ -241,7 +269,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -297,7 +325,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 15.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;

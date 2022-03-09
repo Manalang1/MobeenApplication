@@ -32,8 +32,17 @@ class PayViewController: UIViewController {
         self.title = "tttttt"
         Requestno.text = "Request No. 123456".lociz
         service.text = "Service type:" .lociz
-        text.text = "Text translation"
-//        translator.text = NSLocalizedString(, comment: <#T##String#>)
+        text.text = "Text translation".lociz
+        translator.text = "Translator:".lociz
+        data.text = "Date of submition:".lociz
+        feb.text = "22 Feb 2022".lociz
+        total.text = "Total Price:".lociz
+        tree.text = "300 SAR".lociz
+        payment.text = "Payment Method".lociz
+        apple.text = "Apple pay".lociz
+        credit.text = "Credit/Debit card".lociz
+        cash.text = "Cash".lociz
+
     }
     
 

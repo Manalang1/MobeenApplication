@@ -25,6 +25,7 @@ class PayViewController: UIViewController {
     @IBOutlet weak var pay: UIButton!
     @IBOutlet weak var Cancel: UIButton!
     override func viewDidLoad() {
+        title = "Order details"
         super.viewDidLoad()
         Cancel.layer.cornerRadius = 15
         pay.layer.cornerRadius = 15

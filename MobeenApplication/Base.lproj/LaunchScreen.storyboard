@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="fhe-95-agY">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -13,11 +13,11 @@
             <objects>
                 <viewController id="fhe-95-agY" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zHy-6Q-vN1">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mob" translatesAutoresizingMaskIntoConstraints="NO" id="54x-nI-rIX">
-                                <rect key="frame" x="61" y="225" width="308" height="446"/>
+                                <rect key="frame" x="37" y="199" width="308" height="446"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="446" id="Arx-oA-7Ru"/>
                                     <constraint firstAttribute="width" constant="308" id="lkS-PY-DbM"/>

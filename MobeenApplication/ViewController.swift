@@ -14,28 +14,29 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var header: UIImageView!
     @IBOutlet weak var lblHeader: UILabel!
     @IBOutlet weak var viewCard: UIView!
-    @IBOutlet weak var searchBar: UISearchBar!
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnST: UIButton!
     @IBOutlet weak var btnCO: UIButton!
+    @IBOutlet weak var btnEx: UIButton!
+    @IBOutlet weak var BarSearch: UISearchBar!
     var arrTranslator: [Translator] = [
-        Translator(name: NSLocalizedString("Ali Ahmed", comment: ""), rate: "4.94", descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation", photo: UIImage(named: "m5")!, isLeftSideContent: true, isExpress: true)
+        Translator(name: NSLocalizedString("Ali Ahmed", comment: ""), rate: "4.94".loca, descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation".loca, photo: UIImage(named: "m5")!, isLeftSideContent: true, isExpress: true)
         ,
-        Translator(name: "Omar Saad", rate: "4.30", descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation", photo: UIImage(named: "m1")!, isLeftSideContent: true, isExpress: false)
+        Translator(name: "Omar Saad".loca, rate: "4.30".loca, descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation".loca, photo: UIImage(named: "m1")!, isLeftSideContent: true, isExpress: false)
         ,
-        Translator(name: "Mohammed Ali", rate: "4.74", descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation", photo: UIImage(named: "m3")!, isLeftSideContent: true, isExpress: true)
+        Translator(name: "Mohammed Ali".loca, rate: "4.74".loca, descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation".loca, photo: UIImage(named: "m3")!, isLeftSideContent: true, isExpress: true)
         ,
-        Translator(name: "Sara Abdullah", rate: "4.94", descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation", photo: UIImage(named: "w2")!, isLeftSideContent: true, isExpress: true)
+        Translator(name: "Sara Abdullah".loca, rate: "4.94".loca, descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation".loca, photo: UIImage(named: "w2")!, isLeftSideContent: true, isExpress: true)
         ,
-        Translator(name: "Noura Rashed", rate: "4.14", descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation", photo: UIImage(named: "w1")!, isLeftSideContent: true, isExpress: false)
+        Translator(name: "Noura Rashed".loca, rate: "4.14".loca, descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation".loca, photo: UIImage(named: "w1")!, isLeftSideContent: true, isExpress: false)
         ,
-        Translator(name: "Torjoman", rate: "4.50", descreption: "Torjoman is a leading translation agency that", photo: UIImage(named: "o1")!, isLeftSideContent: false, isExpress: true)
+        Translator(name: "Torjoman".loca, rate: "4.50".loca, descreption: "Torjoman is a leading translation agency that".loca, photo: UIImage(named: "o1")!, isLeftSideContent: false, isExpress: true)
         ,
-        Translator(name: "Saleh Alomar", rate: "4.20", descreption: "Saleh Alomar certifid translation aims", photo: UIImage(named: "o2")!, isLeftSideContent: false, isExpress: true)
+        Translator(name: "Saleh Alomar".loca, rate: "4.20".loca, descreption: "Saleh Alomar certifid translation aims".loca, photo: UIImage(named: "o2")!, isLeftSideContent: false, isExpress: true)
         ,
-        Translator(name: "Googan", rate: "4.84", descreption: "Certified translation section fastst", photo: UIImage(named: "o3")!, isLeftSideContent: false, isExpress: false)
+        Translator(name: "Googan".loca, rate: "4.84".loca, descreption: "Certified translation section fastst".loca, photo: UIImage(named: "o3")!, isLeftSideContent: false, isExpress: false)
         ,
-        Translator(name: "TransOrient", rate: "4.00", descreption: "TransOrient translation office is an ambitious establishment", photo: UIImage(named: "o4")!, isLeftSideContent: false, isExpress: false)
+        Translator(name: "TransOrient".loca, rate: "4.00".loca, descreption: "TransOrient translation office is an ambitious establishment".loca, photo: UIImage(named: "o4")!, isLeftSideContent: false, isExpress: false)
     
     ]
 
@@ -44,9 +45,27 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         tableView.delegate = self
         tableView.dataSource = self
         viewCard.layer.cornerRadius = 12
-        
+        lblHeader.text = "Always there to help you in translation".loca
+        btnST.setTitle("Specialized Translators".loca, for: .normal)
+        btnCO.setTitle("Certified Offices".loca, for: .normal)
+        btnEx.setTitle("Express".loca, for: .normal)
+        BarSearch.placeholder = "Search".loca
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+
+        // Hide the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(true, animated: animated)
+    }
+
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+
+        // Show the Navigation Bar
+        self.navigationController?.setNavigationBarHidden(false, animated: animated)
+    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isSelectingLeftSide {
             let leftContentArr = arrTranslator.filter({ $0.isLeftSideContent == true })
@@ -118,8 +137,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
 
     @IBAction func btnExpress(_ sender: UIButton) {
-        performSegue(withIdentifier: "goToExpress", sender: nil)
+       // performSegue(withIdentifier: "goToExpress", sender: nil)
+        
+        
+        let vc = storyboard?.instantiateViewController(withIdentifier: "Express") as! ExpressVCViewController
+        
+         let ExpressArr = arrTranslator.filter({ $0.isExpress == true })
+        vc.expressArr = ExpressArr
+        
+        navigationController?.pushViewController(vc, animated: true)
+        
     }
+    
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToExpress" {
@@ -139,5 +168,12 @@ struct Translator {
     let isLeftSideContent: Bool
     let isExpress: Bool
 }
+
+extension String {
+    var loca: String {
+        return NSLocalizedString(self, comment: "")
+    }
+}
+//Manal
 
 

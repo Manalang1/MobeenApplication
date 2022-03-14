@@ -10,8 +10,8 @@ import UIKit
 class CompViewController: UIViewController{
     
     var Completed :[Item] = [
-        Item ( name :NSLocalizedString("Mohammed Ahmad", comment: "")  , image : "image5",tybe :NSLocalizedString("Translation", comment: ""),status : NSLocalizedString("Completed", comment: "")) ,
-        Item ( name : NSLocalizedString("Omar Saad", comment: "") , image : "image6",tybe :NSLocalizedString("Conversion", comment: ""),status : NSLocalizedString("Completed", comment: "")),
+        Item ( name :NSLocalizedString("Omar Saad", comment: "")  , image : "image5",tybe :NSLocalizedString("Translation", comment: ""),status : NSLocalizedString("Completed", comment: "")) ,
+        Item ( name : NSLocalizedString("Mohammed Ali", comment: "") , image : "image6",tybe :NSLocalizedString("Conversion", comment: ""),status : NSLocalizedString("Completed", comment: "")),
         Item ( name : NSLocalizedString("Saleh Alomar" , comment: ""), image : "image7",tybe :NSLocalizedString("Translation", comment: ""),status : NSLocalizedString("Completed", comment: "")),
         Item ( name : NSLocalizedString("Googan", comment: "") , image : "image8",tybe :NSLocalizedString("Translation", comment: ""),status : NSLocalizedString("Completed", comment: ""))
     ]
@@ -78,4 +78,5 @@ extension CompViewController: UITableViewDelegate, UITableViewDataSource {
         
     }
 }
+
 

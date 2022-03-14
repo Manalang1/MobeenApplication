@@ -77,18 +77,19 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         
     }
     var isSelectingLeftSide = true
-    var isServiceExpress = true
-    
+//    var isServiceExpress = true
     
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "translatorCell") as! TranslatorTableViewCell
-        
+
         if arrTranslator[indexPath.row].isExpress {
             cell.lblExpress.text = "Express"
       } else {
           cell.lblExpress.text = ""
       }
+        
+
         if isSelectingLeftSide {
             let leftContentArr = arrTranslator.filter({ $0.isLeftSideContent == true })
             let data = leftContentArr[indexPath.row]
@@ -140,7 +141,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
        // performSegue(withIdentifier: "goToExpress", sender: nil)
         
         
-        let vc = storyboard?.instantiateViewController(withIdentifier: "Express") as! ExpressVCViewController
+        let vc = storyboard?.instantiateViewController(withIdentifier: "GoExpress") as! ExpressVCViewController
         
          let ExpressArr = arrTranslator.filter({ $0.isExpress == true })
         vc.expressArr = ExpressArr

@@ -21,6 +21,7 @@ class TranslatorTableViewCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        btnRequest.setTitle("Request".loca, for: .normal)
         // Initialization code
     }
     
@@ -29,7 +30,7 @@ class TranslatorTableViewCell: UITableViewCell {
         lblTransName.text = name
         lblRate.text = rate
         lblDescr.text = description
-        
+        lblExpress.text = "Express".loca
         
     }
     
@@ -46,4 +47,5 @@ class TranslatorTableViewCell: UITableViewCell {
         
     }
 }
+
 

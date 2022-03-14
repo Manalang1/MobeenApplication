@@ -1,4 +1,4 @@
-/* 
+/*
   Localizable.strings
   MobeenApplication
 
@@ -7,7 +7,7 @@
 */
 
 
-"Always there to help you in translation" = "دائماً هناك لمساعدتك في الترجمة";
+"Always there to help you in translation" = "دائماً هنا لمساعدتك في الترجمة";
 "Express" = "فوري";
 "Specialized Translators" = "مترجمين مختصين";
 "Certified Offices" = "مكاتب معتمدة";
@@ -20,9 +20,48 @@
 "Mohammed Ali" = "محمد علي";
 "4.74" = "٤.٧٤";
 "Sara Abdullah" = "سارة عبدالله";
-"4.94" = "٤.٩٤";
 "Noura Rashed" = "نورة راشد";
 "Torjoman" = "ترجمان";
+"Torjoman is a leading translation agency that" = "ترجمان هي وكالة ترجمة رائدة، يعمل لدنيا اكثر من ألف مترجم محترف";
+"Saleh Alomar" = "صالح العمر";
+"4.50" = "٤.٥٠";
+"Saleh Alomar certifid translation aims" = "مكتب صالح العمر للترجمة المعتمدة يهدف الى";
+"4.20" = "٤.٢٠";
+"Googan" = "جوجان";
+"Certified translation section fastst" = "أفضل مكتب ترجمة معتمدة في العالم العربي";
+"4.84" = "٤.٨٤";
+"TransOrient" = "عبر الشرق";
+"4.00" = "٤.٠٠";
+"TransOrient translation office is an ambitious establishment" = "خدمات ترجمة يقدمها فريق من المترجمين المحترفين";
+"Requests" = "الطلبات";
+"Search" = "بحث";
+"Completed" = "مكتمل";
+"Accepted" = "تم القبول";
+"Translation" = "ترجمة";
+"Massage" = "محادثة";
+"View" = "عرض";
+"Canceled" = "تم الإلغاء";
+"Pending" = "معلق";
+"Conversion" = "تحويل النص";
+"Request No. 123456" = "رقم الطلب ١٢٣٤٥٦";
+"view" = "عرض";
+"Service type:" = "نوع الخدمة:";
+"Translator" = "المترجم";
+"Date of submition:" = "تاريخ التقديم";
+"22 Feb 2022" = "٢٢ فبراير ٢٠٢٢";
+"Total Price:" = "المجموع الكلي";
+"300 SAR" = "٣٠٠ريال";
+"Payment Method" = "طريقة الدفع";
+"Apple pay" = "آبل باي";
+"Credit/Debit card" = "بطاقة إئتمان";
+"Cash" = "الدفع عن الاستلام";
+"pay" = "الدفع";
+"Text translation" = "ترجمة نص";
+"Cancel" = "إلغاء";
+
+
+
+
 
 
 

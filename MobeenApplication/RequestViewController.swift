@@ -12,10 +12,10 @@ class RequestViewController: UIViewController{
     
     
     var requests: [Item] = [
-        Item ( name : NSLocalizedString("Ali Ahmad", comment:"") , image : "image1",tybe :NSLocalizedString("Translation", comment: ""),status : NSLocalizedString("Accepted", comment: "")) ,
-        Item ( name : NSLocalizedString("Torjman", comment: "") , image : "image2",tybe :NSLocalizedString("Translation", comment: ""),status : NSLocalizedString("Canceled", comment: "")),
+        Item ( name : NSLocalizedString("Ali Ahmed", comment:"") , image : "image1",tybe :NSLocalizedString("Translation", comment: ""),status : NSLocalizedString("Accepted", comment: "")) ,
+        Item ( name : NSLocalizedString("Torjoman", comment: "") , image : "image2",tybe :NSLocalizedString("Translation", comment: ""),status : NSLocalizedString("Canceled", comment: "")),
         Item ( name : NSLocalizedString("Sara Abdullah" , comment: ""), image : "image3",tybe :NSLocalizedString("Translation", comment: ""),status : NSLocalizedString("Pending", comment: "")),
-        Item ( name : NSLocalizedString("Nourah Rashed", comment: "") , image : "image4",tybe :NSLocalizedString("Conversion", comment: ""),status : NSLocalizedString("Canceled", comment: ""))
+        Item ( name : NSLocalizedString("Noura Rashed", comment: "") , image : "image4",tybe :NSLocalizedString("Conversion", comment: ""),status : NSLocalizedString("Canceled", comment: ""))
     ]
     // 1
     var filteredRequests = [Item]()
@@ -133,3 +133,4 @@ extension String {
         return NSLocalizedString(self, comment: "")
     }
 }
+

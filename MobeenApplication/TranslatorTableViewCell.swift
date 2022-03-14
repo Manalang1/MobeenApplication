@@ -22,7 +22,7 @@ class TranslatorTableViewCell: UITableViewCell {
     override func awakeFromNib() {
         super.awakeFromNib()
         btnRequest.setTitle("Request".loca, for: .normal)
-        // Initialization code
+
     }
     
     func setupCell(photo: UIImage, name: String, rate: String, description: String) {
@@ -30,7 +30,7 @@ class TranslatorTableViewCell: UITableViewCell {
         lblTransName.text = name
         lblRate.text = rate
         lblDescr.text = description
-        lblExpress.text = "Express".loca
+//        lblExpress.text = "Express".loca
         
     }
     

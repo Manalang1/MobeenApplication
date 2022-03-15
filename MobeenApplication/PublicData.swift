@@ -10,7 +10,7 @@ import UIKit
 class PublicData {
   static let people: [Person] = [
         .init(
-            name: NSLocalizedString("Mohammead", comment: ""),
+            name: NSLocalizedString("Mohammed", comment: ""),
             review: NSLocalizedString("His work is great and very accurate.", comment: ""),
             numberValues: 4.84,
             image: UIImage(named: "photo1")!

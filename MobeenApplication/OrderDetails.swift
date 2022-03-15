@@ -40,13 +40,20 @@ class OrderDetails: UITableViewController {
     
     @IBAction func btnRequest(_ sender: Any) {
         showAlertView()
+       // let vchome = storyboard?.instantiateViewController(withIdentifier: "Homepage")
+       // navigationController?.pushViewController(vchome!, animated: true)
+        //let vcHome = storyboard? .instantiateViewController(withIdentifier: "Homepage") as! ViewController
+       // navigationController?.pushViewController(vcHome, animated: true)
+        
     }
     func showAlertView(){
-        let alert = UIAlertController (title: "Your Request was Sent Successfully", message: "", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Done", style: .default, handler: { action in
+        let alert = UIAlertController (title: NSLocalizedString("Your Request was Sent Successfully", comment: ""), message: "", preferredStyle: .alert)
+        alert.addAction(UIAlertAction(title: NSLocalizedString("Done", comment: ""), style: .default, handler: { action in
             //print("Done")
         }))
         present(alert, animated: true, completion: nil)
+        let vcHome = storyboard? .instantiateViewController(withIdentifier: "Homepage") as! ViewController
+        navigationController?.pushViewController(vcHome, animated: true)
         
     }
     
@@ -130,10 +137,10 @@ class OrderDetails: UITableViewController {
               self.audioEngine.stop()
               self.recognitionRequest?.endAudio()
               self.btnStart.isEnabled = false
-              self.btnStart.setTitle("Start Recording", for: .normal)
+              self.btnStart.setTitle("Start", for: .normal)
           } else {
               self.startRecording()
-              self.btnStart.setTitle("Stop Recording", for: .normal)
+              self.btnStart.setTitle("Stop", for: .normal)
           }
       }
     
@@ -143,10 +150,10 @@ class OrderDetails: UITableViewController {
             self.audioEngine.stop()
             self.recognitionRequest?.endAudio()
             self.btnStartAddNotesRec.isEnabled = false
-            self.btnStartAddNotesRec.setTitle("Start Recording", for: .normal)
+            self.btnStartAddNotesRec.setTitle("Start", for: .normal)
         } else {
             self.startRecordingAddNotes()
-            self.btnStartAddNotesRec.setTitle("Stop Recording", for: .normal)
+            self.btnStartAddNotesRec.setTitle("Stop", for: .normal)
         }
         
     }
@@ -529,3 +536,4 @@ extension OrderDetails: SFSpeechRecognizerDelegate {
         }
     }
 }
+

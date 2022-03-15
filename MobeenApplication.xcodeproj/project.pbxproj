@@ -9,6 +9,13 @@
 /* Begin PBXBuildFile section */
 		2BC12AC127D89DD80035E6E7 /* OrderDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC12AC027D89DD80035E6E7 /* OrderDetails.swift */; };
 		2BC12AC327D89E720035E6E7 /* buttonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2BC12AC227D89E720035E6E7 /* buttonViewController.swift */; };
+		886BAB6827E0732000D51C65 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BAB6727E0732000D51C65 /* ChatViewController.swift */; };
+		886BAB6A27E0733400D51C65 /* MessageData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BAB6927E0733400D51C65 /* MessageData.swift */; };
+		886BAB6C27E0733D00D51C65 /* MessageTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BAB6B27E0733D00D51C65 /* MessageTableViewCell.swift */; };
+		886BAB6E27E0734300D51C65 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BAB6D27E0734300D51C65 /* Person.swift */; };
+		886BAB7027E0734900D51C65 /* PublicData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BAB6F27E0734900D51C65 /* PublicData.swift */; };
+		886BAB7227E0734E00D51C65 /* HomeTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BAB7127E0734E00D51C65 /* HomeTableViewCell.swift */; };
+		886BAB7427E0735300D51C65 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 886BAB7327E0735300D51C65 /* HomeViewController.swift */; };
 		8AD2BE9C27D8972E00FA1BD5 /* RequestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BE9B27D8972E00FA1BD5 /* RequestViewController.swift */; };
 		8AD2BEA027D8978600FA1BD5 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BE9F27D8978600FA1BD5 /* Item.swift */; };
 		8AD2BEA227D897AB00FA1BD5 /* RequestTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AD2BEA127D897AB00FA1BD5 /* RequestTableViewCell.swift */; };
@@ -30,6 +37,13 @@
 /* Begin PBXFileReference section */
 		2BC12AC027D89DD80035E6E7 /* OrderDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OrderDetails.swift; sourceTree = "<group>"; };
 		2BC12AC227D89E720035E6E7 /* buttonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = buttonViewController.swift; sourceTree = "<group>"; };
+		886BAB6727E0732000D51C65 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		886BAB6927E0733400D51C65 /* MessageData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageData.swift; sourceTree = "<group>"; };
+		886BAB6B27E0733D00D51C65 /* MessageTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageTableViewCell.swift; sourceTree = "<group>"; };
+		886BAB6D27E0734300D51C65 /* Person.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
+		886BAB6F27E0734900D51C65 /* PublicData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PublicData.swift; sourceTree = "<group>"; };
+		886BAB7127E0734E00D51C65 /* HomeTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeTableViewCell.swift; sourceTree = "<group>"; };
+		886BAB7327E0735300D51C65 /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		8AD2BE9B27D8972E00FA1BD5 /* RequestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestViewController.swift; sourceTree = "<group>"; };
 		8AD2BE9F27D8978600FA1BD5 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 		8AD2BEA127D897AB00FA1BD5 /* RequestTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestTableViewCell.swift; sourceTree = "<group>"; };
@@ -100,6 +114,13 @@
 				8F52923927D89621002289B0 /* Localizable.strings */,
 				2BC12AC027D89DD80035E6E7 /* OrderDetails.swift */,
 				2BC12AC227D89E720035E6E7 /* buttonViewController.swift */,
+				886BAB6727E0732000D51C65 /* ChatViewController.swift */,
+				886BAB6927E0733400D51C65 /* MessageData.swift */,
+				886BAB6B27E0733D00D51C65 /* MessageTableViewCell.swift */,
+				886BAB6D27E0734300D51C65 /* Person.swift */,
+				886BAB6F27E0734900D51C65 /* PublicData.swift */,
+				886BAB7127E0734E00D51C65 /* HomeTableViewCell.swift */,
+				886BAB7327E0735300D51C65 /* HomeViewController.swift */,
 			);
 			path = MobeenApplication;
 			sourceTree = "<group>";
@@ -180,16 +201,23 @@
 				2BC12AC327D89E720035E6E7 /* buttonViewController.swift in Sources */,
 				8FF01B3B27D88EB20065AC54 /* ViewController.swift in Sources */,
 				8AD2BEA427D897DE00FA1BD5 /* CustomImageView.swift in Sources */,
+				886BAB6C27E0733D00D51C65 /* MessageTableViewCell.swift in Sources */,
 				8AD2BEA227D897AB00FA1BD5 /* RequestTableViewCell.swift in Sources */,
+				886BAB7427E0735300D51C65 /* HomeViewController.swift in Sources */,
 				8F52923227D895C2002289B0 /* TranslatorTableViewCell.swift in Sources */,
+				886BAB7227E0734E00D51C65 /* HomeTableViewCell.swift in Sources */,
+				886BAB6E27E0734300D51C65 /* Person.swift in Sources */,
 				8AD2BE9C27D8972E00FA1BD5 /* RequestViewController.swift in Sources */,
 				8AD2BEA627D8981C00FA1BD5 /* CompViewController.swift in Sources */,
 				8F52923427D895E8002289B0 /* ExpressVCViewController.swift in Sources */,
+				886BAB7027E0734900D51C65 /* PublicData.swift in Sources */,
 				8AD2BEAA27D8986F00FA1BD5 /* PayViewController.swift in Sources */,
 				2BC12AC127D89DD80035E6E7 /* OrderDetails.swift in Sources */,
 				8AD2BEA027D8978600FA1BD5 /* Item.swift in Sources */,
+				886BAB6A27E0733400D51C65 /* MessageData.swift in Sources */,
 				8AD2BEA827D8983F00FA1BD5 /* ComTableViewCell.swift in Sources */,
 				8FF01B3727D88EB20065AC54 /* AppDelegate.swift in Sources */,
+				886BAB6827E0732000D51C65 /* ChatViewController.swift in Sources */,
 				8FF01B3927D88EB20065AC54 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

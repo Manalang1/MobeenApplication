@@ -30,10 +30,9 @@ class ExpressVCViewController: UIViewController, UITableViewDelegate, UITableVie
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = TableExpress.dequeueReusableCell(withIdentifier: "translatorCell") as! TranslatorTableViewCell
         let infoo = expressArr[indexPath.row]
+        cell.lblExpress.text = "Express".loca
         cell.setupCell(photo: infoo.photo, name: infoo.name, rate: infoo.rate, description: infoo.descreption)
         return cell
 
     }
 }
-
-

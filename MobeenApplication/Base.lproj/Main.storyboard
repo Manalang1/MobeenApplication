@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="6pW-Du-djW">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Ob4-4g-uB2">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
@@ -435,7 +435,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x6b-hs-Ahx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3063" y="117"/>
+            <point key="canvasLocation" x="-3808" y="218"/>
         </scene>
         <!--Requests-->
         <scene sceneID="kdy-6x-mqa">
@@ -556,6 +556,7 @@
                                                             </state>
                                                             <connections>
                                                                 <action selector="massage:" destination="4g5-nw-AAu" eventType="touchUpInside" id="o3u-X5-95F"/>
+                                                                <segue destination="6pW-Du-djW" kind="show" id="FRo-sg-XVb"/>
                                                             </connections>
                                                         </button>
                                                     </subviews>
@@ -1302,7 +1303,7 @@
         <!--Home View Controller-->
         <scene sceneID="DuY-2R-4eH">
             <objects>
-                <viewController id="m8p-WG-H5P" customClass="HomeViewController" customModule="MobeenApplication" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="profile" id="m8p-WG-H5P" customClass="HomeViewController" customModule="MobeenApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NXH-b5-dqb">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1400,8 +1401,8 @@
                                                             <constraint firstAttribute="width" constant="195" id="Lvh-3x-s9o"/>
                                                         </constraints>
                                                     </stackView>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Translator and Editor (English - Arabic)  Bachelor’s Degree -  Language and Translation " lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vy-zL-kCq">
-                                                        <rect key="frame" x="0.0" y="24" width="350" height="36"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="Translator and Editor (English - Arabic) Bachelor’s Degree - Language and Translation" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Vy-zL-kCq">
+                                                        <rect key="frame" x="0.0" y="24" width="346" height="36"/>
                                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                                         <nil key="textColor"/>
                                                         <nil key="highlightedColor"/>
@@ -1647,7 +1648,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Mnh-I9-mSJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-1997" y="117"/>
+            <point key="canvasLocation" x="-3126" y="218"/>
         </scene>
         <!--Chat View Controller-->
         <scene sceneID="ENI-e3-SoY">
@@ -1690,7 +1691,7 @@
                                 </constraints>
                             </view>
                             <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xpg-8g-A8J">
-                                <rect key="frame" x="332" y="777.66666666666663" width="50" height="31"/>
+                                <rect key="frame" x="332" y="728.66666666666663" width="50" height="31"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="50" id="OlC-2U-FCY"/>
                                     <constraint firstAttribute="height" constant="31" id="uhV-mY-Rzn"/>
@@ -1703,7 +1704,7 @@
                                 </connections>
                             </button>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="SRf-Y7-KSi">
-                                <rect key="frame" x="0.0" y="136" width="390" height="631.66666666666663"/>
+                                <rect key="frame" x="0.0" y="136" width="390" height="582.66666666666663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="messageCell" rowHeight="100" id="uPe-qc-3MO" customClass="MessageTableViewCell" customModule="MobeenApplication" customModuleProvider="target">
@@ -1771,7 +1772,7 @@
                                 </userDefinedRuntimeAttributes>
                             </tableView>
                             <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type a message.." textAlignment="natural" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="Jyk-cM-5Fz">
-                                <rect key="frame" x="70" y="776" width="258" height="34"/>
+                                <rect key="frame" x="70" y="727" width="258" height="34"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="258" id="RZh-za-FNw"/>
                                     <constraint firstAttribute="height" constant="34" id="co4-cJ-Fbe"/>
@@ -1826,7 +1827,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hNr-kj-4SL" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-925" y="117"/>
+            <point key="canvasLocation" x="-4015" y="1019"/>
         </scene>
     </scenes>
     <resources>

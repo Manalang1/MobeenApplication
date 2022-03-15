@@ -33,13 +33,13 @@ class HomeViewController: UIViewController,UITableViewDelegate , UITableViewData
 
         btRequest.setTitle(NSLocalizedString("Request",comment: "" ), for: .normal)
         lableAli.text = NSLocalizedString("Ali Ahmed", comment: "")
-        labletext.text = NSLocalizedString("Translator and Editor (English - Arabic)  Bachelor’s Degree -  Language and Translation ", comment: "")
-        labletext2.text = NSLocalizedString("King Saud University ", comment: "")
+        labletext.text = NSLocalizedString("Translator and Editor (English - Arabic) Bachelor’s Degree - Language and Translation", comment: "")
+        labletext2.text = NSLocalizedString("King Saud University", comment: "")
         labletext3.text = NSLocalizedString("Riyadh, Saudi Arabia", comment: "")
         labletext4.text = NSLocalizedString("Qualifications", comment: "")
         labletext5.text = NSLocalizedString("4.84", comment: "")
-        labletext6.text = NSLocalizedString("Ali Ahmad  posted this.2w", comment: "")
-        labletext7.text = NSLocalizedString("Ali Ahmad  posted this.2w", comment: "")
+        labletext6.text = NSLocalizedString("posted this.2w", comment: "")
+        labletext7.text = NSLocalizedString("posted this.2w", comment: "")
         labletext8.text = NSLocalizedString("Review", comment: "")
         
     }

@@ -19,6 +19,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     @IBOutlet weak var btnCO: UIButton!
     @IBOutlet weak var btnEx: UIButton!
     @IBOutlet weak var BarSearch: UISearchBar!
+    var arrTranslatorfultring = [Translator]()
     var arrTranslator: [Translator] = [
         Translator(name: NSLocalizedString("Ali Ahmed", comment: ""), rate: "4.94".loca, descreption: "Translator and Editor (English - Arabic) has a Bachelor’s Degree in Language and Translation".loca, photo: UIImage(named: "m5")!, isLeftSideContent: true, isExpress: true)
         ,
@@ -68,11 +69,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if isSelectingLeftSide {
-            let leftContentArr = arrTranslator.filter({ $0.isLeftSideContent == true })
-            return leftContentArr.count
+            arrTranslatorfultring = arrTranslator.filter({ $0.isLeftSideContent == true })
+            print(arrTranslatorfultring.count)
+            return arrTranslatorfultring.count
         } else {
-            let rightContentArr = arrTranslator.filter({ $0.isLeftSideContent == false })
-            return rightContentArr.count
+            
+            arrTranslatorfultring = arrTranslator.filter({ $0.isLeftSideContent == false })
+            print(arrTranslatorfultring.count)
+            return arrTranslatorfultring.count
         }
         
     }
@@ -82,16 +86,15 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "translatorCell") as! TranslatorTableViewCell
-
-        if arrTranslator[indexPath.row].isExpress {
-            cell.lblExpress.text = "Express"
-      } else {
-          cell.lblExpress.text = ""
-      }
         
-
+    
         if isSelectingLeftSide {
-            let leftContentArr = arrTranslator.filter({ $0.isLeftSideContent == true })
+            if arrTranslatorfultring[indexPath.row].isExpress {
+                cell.lblExpress.text = "Express".loca
+          } else {
+              cell.lblExpress.text = ""
+          }
+            let leftContentArr = arrTranslatorfultring.filter({ $0.isLeftSideContent == true })
             let data = leftContentArr[indexPath.row]
             cell.setupCell(photo: data.photo, name: data.name, rate: data.rate, description: data.descreption)
             cell.btnSave.tag = indexPath.row
@@ -99,6 +102,14 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
             cell.btnSave.addTarget(self, action: #selector(addToSaved(sender:)), for: .touchUpInside)
             return cell
         } else {
+            print(arrTranslatorfultring[indexPath.row].name)
+            print(arrTranslatorfultring[indexPath.row].isExpress)
+            
+            if arrTranslatorfultring[indexPath.row].isExpress {
+                cell.lblExpress.text = "Express".loca
+          } else {
+              cell.lblExpress.text = ""
+          }
             let rightContentArr = arrTranslator.filter({ $0.isLeftSideContent == false })
             let data = rightContentArr[indexPath.row]
             cell.setupCell(photo: data.photo, name: data.name, rate: data.rate, description: data.descreption)
@@ -113,6 +124,11 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     }
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print("cell index = \(indexPath.row)")
+        
+        tableView.endEditing(true)
+        let vc2 = storyboard? .instantiateViewController(withIdentifier: "profile") as! HomeViewController
+        navigationController?.pushViewController(vc2, animated: true)
+    
     }
     
     @objc
@@ -125,6 +141,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
      isSelectingLeftSide = true
         btnST.setTitleColor(UIColor(red: 59/255, green: 130/255, blue: 247/255, alpha: 1), for: .normal)
         btnCO.setTitleColor(.gray, for: .normal)
+        arrTranslatorfultring.removeAll()
+        
         tableView.reloadData()
         
         
@@ -133,6 +151,8 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         isSelectingLeftSide = false
         btnST.setTitleColor(.gray, for: .normal)
         btnCO.setTitleColor(UIColor(red: 59/255, green: 130/255, blue: 247/255, alpha: 1), for: .normal)
+        arrTranslatorfultring.removeAll()
+        
         tableView.reloadData()
     
     }
@@ -161,6 +181,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         }
     }
 }
+
 struct Translator {
     let name : String
     let rate : String
@@ -174,7 +195,4 @@ extension String {
     var loca: String {
         return NSLocalizedString(self, comment: "")
     }
-}
-//Manal
-
-
+    }

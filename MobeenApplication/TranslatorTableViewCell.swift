@@ -30,8 +30,6 @@ class TranslatorTableViewCell: UITableViewCell {
         lblTransName.text = name
         lblRate.text = rate
         lblDescr.text = description
-//        lblExpress.text = "Express".loca
-        
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
@@ -47,5 +45,4 @@ class TranslatorTableViewCell: UITableViewCell {
         
     }
 }
-
 

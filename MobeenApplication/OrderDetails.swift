@@ -433,7 +433,7 @@ class OrderDetails: UITableViewController {
         lblAdditionalNotes.text = NSLocalizedString("Additional Notes", comment: "")
         textTranslation.setTitle( NSLocalizedString("Text Translation", comment: ""), for: .normal)
         textConversion.setTitle( NSLocalizedString("Text Conversion", comment: ""), for: .normal)
-        outletRequest.setTitle(NSLocalizedString("Request", comment: ""), for: .normal)
+        outletRequest.setTitle(NSLocalizedString("Send Request", comment: ""), for: .normal)
         
         //textConversion.subtitleLabel?.setValue(NSLocalizedString("Convert an informal text into a formal text", comment: ""), forKey: "Convert an informal text into a formal text")
         

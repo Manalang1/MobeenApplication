@@ -10,6 +10,7 @@ import UIKit
 class HomeViewController: UIViewController,UITableViewDelegate , UITableViewDataSource {
     
     
+    
     @IBOutlet var tableView: UITableView!
     
     @IBOutlet weak var backg: UIView!

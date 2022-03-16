@@ -55,7 +55,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mmm" translatesAutoresizingMaskIntoConstraints="NO" id="Uka-tX-vmi">
-                                <rect key="frame" x="0.0" y="-38" width="390" height="531"/>
+                                <rect key="frame" x="0.0" y="-38" width="390" height="482"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Always there to help you in translation" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2nj-H5-d4d">
                                 <rect key="frame" x="32" y="191" width="326" height="17"/>
@@ -1607,7 +1607,7 @@
             <objects>
                 <tableViewController id="sch-lY-tmt" customClass="OrderDetails" customModule="MobeenApplication" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="plain" separatorStyle="none" sectionIndexMinimumDisplayRowCount="1" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" id="1V1-aJ-jX7">
-                        <rect key="frame" x="0.0" y="0.0" width="390" height="790"/>
+                        <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <sections>
@@ -1893,17 +1893,16 @@
                         <outlet property="textField" destination="Wxi-XI-xgw" id="UZb-JS-Pvt"/>
                         <outlet property="textTranslation" destination="4GK-Re-Gbh" id="4lA-hx-UY9"/>
                         <outlet property="textview" destination="64v-Wr-DDj" id="VU3-yo-gby"/>
-                        <segue destination="3i9-lP-e45" kind="presentation" identifier="toHome" modalPresentationStyle="fullScreen" id="t4P-OP-a7o"/>
+                        <segue destination="Ob4-4g-uB2" kind="presentation" identifier="toHome" modalPresentationStyle="fullScreen" id="rwZ-8s-BAd"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ojj-xd-a6h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-3126.1538461538462" y="1018.7203791469194"/>
+            <point key="canvasLocation" x="-3274" y="1019"/>
         </scene>
     </scenes>
     <inferredMetricsTieBreakers>
         <segue reference="kXu-1E-EbQ"/>
-        <segue reference="t4P-OP-a7o"/>
     </inferredMetricsTieBreakers>
     <resources>
         <image name="Ali" width="244" height="254"/>

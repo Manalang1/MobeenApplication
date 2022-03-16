@@ -47,6 +47,7 @@
 "view" = "عرض";
 "Service type:" = "نوع الخدمة:";
 "Translator" = "المترجم";
+"Translator:" = "المترجم:";
 "Date of submition:" = "تاريخ التقديم";
 "22 Feb 2022" = "٢٢ فبراير ٢٠٢٢";
 "Total Price:" = "المجموع الكلي";
@@ -84,12 +85,7 @@
 "Done" = "تم";
 "en-US" = "ar-SA";
 "Say something, I'm listening!" = "تحدث، أنا أستمع";
-
-
-
-
-
-
+"Request Details" = "تفاصيل الطلب";
 
 
 

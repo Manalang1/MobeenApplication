@@ -25,11 +25,11 @@ class PayViewController: UIViewController {
     @IBOutlet weak var pay: UIButton!
     @IBOutlet weak var Cancel: UIButton!
     override func viewDidLoad() {
-        title = "Order details"
+       //title = "Request Details"
         super.viewDidLoad()
         Cancel.layer.cornerRadius = 15
         pay.layer.cornerRadius = 15
-        self.title = "tttttt"
+        self.title = "Request Details".loca
         Requestno.text = "Request No. 123456".lociz
         service.text = "Service type:" .lociz
         text.text = "Text translation".lociz
@@ -42,6 +42,7 @@ class PayViewController: UIViewController {
         apple.text = "Apple pay".lociz
         credit.text = "Credit/Debit card".lociz
         cash.text = "Cash".lociz
+        pay.setTitle("pay".loca, for: .normal)
 
     }
     

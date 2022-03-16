@@ -49,6 +49,7 @@ class OrderDetails: UITableViewController {
     func showAlertView(){
         let alert = UIAlertController (title: NSLocalizedString("Your Request was Sent Successfully", comment: ""), message: "", preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: NSLocalizedString("Done", comment: ""), style: .default, handler: { action in
+            self.performSegue(withIdentifier: "toHome", sender: nil)
             //print("Done")
         }))
         present(alert, animated: true, completion: nil)
@@ -122,11 +123,11 @@ class OrderDetails: UITableViewController {
    
     
     //VARIABLES
-    let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
+    let speechRecognizer = SFSpeechRecognizer(locale: Locale(identifier: "en-US".loca))
     var recognitionRequest : SFSpeechAudioBufferRecognitionRequest?
     var recognitionTask : SFSpeechRecognitionTask?
     let audioEngine = AVAudioEngine()
-    let speechRecognizerAddNotes = SFSpeechRecognizer(locale: Locale(identifier: "en-US"))
+    let speechRecognizerAddNotes = SFSpeechRecognizer(locale: Locale(identifier: "en-US".loca))
     
     @IBOutlet weak var btnStartAddNotesRec: UIButton!
     @IBOutlet weak var lblStartAddNotesRec: UILabel!
@@ -301,7 +302,7 @@ class OrderDetails: UITableViewController {
                print("audioEngine couldn't start because of an error.")
            }
 
-           self.lblText.text = "Say something, I'm listening!"
+        self.lblText.text = "Say something, I'm listening!".loca
        }
 
     func startRecordingAddNotes() {
@@ -369,7 +370,7 @@ class OrderDetails: UITableViewController {
                print("audioEngine couldn't start because of an error.")
            }
 
-           self.lblStartAddNotesRec.text = "Say something, I'm listening!"
+        self.lblStartAddNotesRec.text = "Say something, I'm listening!".loca
        }
         
 //    @IBAction func voiceOverButtonTapped(_ sender: UIButton) {
